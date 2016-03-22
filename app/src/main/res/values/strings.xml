@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlickrGallery</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="flickr_search_textedit">Search Flickr</string>
+    <string name="flickr_search_button">Search</string>
+    <string name="error_message_empty_search">Please insert something in the search</string>
+    <string name="error_message_no_network">Cannot perform the search for "%1$s", the device is offline</string>
+    <string name="loading_page_fired">Starting loading page "%1$s", please wait, it might take a while</string>
+    <string name="loading_page_received">Page "%1$s", has been loaded</string>
+</resources>
