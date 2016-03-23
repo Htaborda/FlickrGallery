@@ -19,9 +19,8 @@ this is due to (try to) minimise the amount of http calls made.
 
 Possible improvements:
 
- - Make the cache behave as a real LRU (e.g. delete older files once the number of files in the cache gets over a certain value)
- - Clean up the cache when the app dies (e.g. once the onDestroy() is called on the only activity)
- - Make the app working in landscape.
+ - Make the cache behave as a real LRU (e.g. delete older files once the number of files in the cache gets over a certain value).
+ - Make the app work in landscape mode.
  - Downloading the image in the closest size depending on the device resolution.
  - Change the download logic to a more agressive strategy to improve UX in slow network conditions.
  - Of course, polish the UI and add some eye-candy.
@@ -31,6 +30,6 @@ Known problems:
 
 
 
-An assembled (debug version) APK is enclosed at the same level of this file.
+For convenience, an assembled (debug version) APK is enclosed at the same level of this file.
  
 

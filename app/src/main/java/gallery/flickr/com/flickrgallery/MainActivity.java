@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import gallery.flickr.com.flickrgallery.screens.ListPhotoScreen;
 import gallery.flickr.com.flickrgallery.screens.SearchScreen;
 import gallery.flickr.com.flickrgallery.screens.ShowPhotoScreen;
+import gallery.flickr.com.flickrgallery.utils.ImageManager;
 import gallery.flickr.com.flickrgallery.utils.InputUtils;
 
 /**
@@ -87,7 +88,10 @@ public class MainActivity extends FragmentActivity {
         getFragmentManager().popBackStack();
     }
 
-    //TODO: Clean the image cache
-    //@Override
-    //public void onDestroy() {}
+    //Clean the image cache
+    @Override
+    public void onDestroy() {
+        ImageManager.getInstance(getApplicationContext()).cleanOnExit();
+        super.onDestroy();
+    }
 }

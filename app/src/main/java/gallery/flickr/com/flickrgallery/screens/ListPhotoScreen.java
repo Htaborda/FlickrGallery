@@ -97,7 +97,7 @@ public class ListPhotoScreen extends ListFragment implements LoaderManager.Loade
 
     @Override
     public void onLoaderReset(Loader<List<FlickrSearchItem>> loader) {
-        if (BuildConfig.DEBUG) Log.v(TAG, "List Photos, reset the laoder");
+        if (BuildConfig.DEBUG) Log.v(TAG, "List Photos, reset the loader");
     }
 
     @Override
