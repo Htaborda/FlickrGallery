@@ -86,4 +86,8 @@ public class MainActivity extends FragmentActivity {
     public void onBackPressed() {
         getFragmentManager().popBackStack();
     }
+
+    //TODO: Clean the image cache
+    //@Override
+    //public void onDestroy() {}
 }

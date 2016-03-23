@@ -39,7 +39,7 @@ public class FlickrImageAdapter extends ArrayAdapter<FlickrSearchItem> {
                 vh = (ViewHolder) convertView.getTag();
             }
             vh.textView.setText(item.getTitle());
-            Bitmap cached = ImageManager.getInstance(getContext()).getBimap(String.valueOf(item.getUrl_small().hashCode()));
+            Bitmap cached = ImageManager.getInstance(getContext()).getBitmap(String.valueOf(item.getUrl_small().hashCode()));
             if (cached!=null) {
                 vh.imageView.setImageBitmap(cached);
                 if (BuildConfig.DEBUG) Log.v(TAG, "Returning the view for item n."+position+", id:"+item.getId()+" from cache");
